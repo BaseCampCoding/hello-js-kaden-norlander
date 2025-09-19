@@ -8,8 +8,8 @@ let petDogIsPresent = true;
 
 let canExecuteFastAttack = !knightIsAwake;
 
-let canSpy = knightIsAwake || !archerIsAwake || prisonerIsAwake;
+let canSpy = knightIsAwake || archerIsAwake || prisonerIsAwake;
 
-let canSignalPrisoner = prisonerIsAwake && archerIsAwake;
+let canSignalPrisoner = prisonerIsAwake && !archerIsAwake;
 
-let canFreePrisoner = petDogIsPresent && archerIsAwake || !petDogIsPresent && prisonerIsAwake && !knightIsAwake && archerIsAwake;
+let canFreePrisoner = (petDogIsPresent && !archerIsAwake) || (!petDogIsPresent && prisonerIsAwake && !knightIsAwake && !archerIsAwake);

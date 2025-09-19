@@ -1,13 +1,19 @@
 let kind = [`car`]
-let needLicenseResult = true;
+let needLicenseResult;
+
+if (kind === 'car' || kind === 'truck'){
+    needLicenseResult = true
+} else {
+    needLicenseResult = false
+}
 
 let option1 = `s14`;
 let option2 = `supra`;
 let chooseVehicleResult;
 if (option1 > option2) {
-    chooseVehicleResult = option1 + ` is clearly the better choice.`
-} else {
     chooseVehicleResult = option2 + ` is clearly the better choice.`
+} else {
+    chooseVehicleResult = option1 + ` is clearly the better choice.`
 }
 
 let originalPrice = 40000;

@@ -2,8 +2,9 @@ let position = 9;
 let stack = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let getItemResult = stack[position];
 
+position = 8;
 let replacementCard = 11;
-stack[9] = replacementCard;
+stack[position] = replacementCard;
 
 let newCardTop = 21;
 stack.unshift(newCardTop);
