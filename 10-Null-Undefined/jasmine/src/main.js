@@ -1,4 +1,3 @@
-const { version } = require("react");
 
 let visitorName = `Kaden`;
 let visitorAge = 18;
@@ -43,6 +42,5 @@ let gtcVersion;
 if (visitorWithGtc.gtc.version === undefined) {
     gtcVersion = undefined
 } else {
-    gtcVersion = `hello`;
+    gtcVersion = visitorWithGtc.gtc.version;
 }
-console.log(gtcVersion)
